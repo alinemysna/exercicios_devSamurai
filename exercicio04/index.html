@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>exercicio funções</title>
+</head>
+<script>
+  function soma(a, b) {
+    return a + b
+  }
+
+  function subtracao(a, b) {
+    return a - b
+  }
+
+
+
+  let n1 = Number(prompt('Digite o primeiro numero.'));
+  let n2 = Number(prompt('Digite o segundo numero.'));
+  let op = prompt('Qual operação você quer realizar?')
+
+  let resultado 
+
+  if(op == '+') {
+    resultado = soma(n1, n2);
+  } else if( op == '-') {
+    resultado = subtracao(n1, n2);
+  }
+
+  alert('O resultado é: ' + resultado)
+</script>
+<body>
+  
+</body>
+</html>
