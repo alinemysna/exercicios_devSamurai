@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Ping Pong</title>
+  <style>
+    * {
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="canvas" width="300" height="300">
+    Desculpe-me, seu navegador não suporta o elemento &lt;canvas&gt;.
+  </canvas>
+  
+  <script>
+    const canvasE1 = document.querySelector("canvas"), 
+      canvasCtx = canvasE1.getContext("2d")
+
+    function setup() {
+      canvasE1.width = canvasCtx.width = window.innerWidth
+      canvasE1.height = canvasCtx.height = window.innerHeight
+    }
+
+    function draw() {
+      canvasCtx.fillStyle = "#286047"
+      canvasCtx.fillRect(0, 0, window.innerWidth, window.innerHeight)
+    }
+  </script>
+</body>
+</html>
