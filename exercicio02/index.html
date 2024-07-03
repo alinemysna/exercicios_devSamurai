@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EXERCICIO IF/ELSE#2</title>
+</head>
+<script>
+  let idioma = prompt('Digite seu idioma');
+  let variacao =prompt('Porfavor, digite usa variação!')
+
+  if((idioma == 'pt') && (variacao == 'br' || variacao == 'pt')) {
+    alert('Olá!')
+  } else  if(idioma == 'en' && variacao == 'us') {
+    alert('Hi')
+  } else  if(idioma == 'en' && variacao == 'gb') {
+    alert('Hello')
+  } else {  
+    alert('Seu idioma eou variação não está funcinando')
+  }
+
+  alert('Tudo OK com seu idioma e/ou variação! ')
+</script>
+<body>
+  
+</body>
+</html>
