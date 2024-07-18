@@ -77,10 +77,10 @@
       human: 1,
       computer: 2,
       increaseHuman: function () {
-        human++
+        this.human++
       },
       increaseComputer: function () {
-        computer++
+        this.computer++
       },
       draw: function() {
         canvasCtx.font = "bold 72px Arial"
@@ -144,7 +144,7 @@
       _reverseY: function() {
         this.directionY  *= - 1
       },
-      
+
       _pointUp: function() {
         this.x += field.w / 2
         this.y += field.h / 2
