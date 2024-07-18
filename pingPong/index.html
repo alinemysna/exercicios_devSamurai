@@ -103,13 +103,34 @@
 
         if (this.x > field.w - this.r - rightPaddle.w - gapX) {
 
-          if (this.y + this.r > rightPaddle.y && this.y - this.r < rightPaddle.y + rightPaddle.h) {
+          if (
+            this.y + this.r > rightPaddle.y && 
+            this.y - this.r < rightPaddle.y + rightPaddle.h
+          ) {
+            
             this._reverseX()
           }else{
+            
             score.increaseHuman()
             this._pointUp()
           }
         }
+
+        if (this.x < this.r + leftPaddle.w + gapX) {
+          
+          if (
+            this.y + this.r > leftPaddle.y && 
+            this.y - this.r < leftPaddle.y + leftPaddle.h
+          ) {
+          
+            this._reverseX()
+          }else{
+            
+            score.increaseComputer()
+            this._pointUp()
+          }
+        }
+
         if(
           (this.y - this.r < 0 && this.directionY < 0) ||
           (this.y > field.h - this.r && this.directionY > 0)
@@ -123,10 +144,12 @@
       _reverseY: function() {
         this.directionY  *= - 1
       },
+      
       _pointUp: function() {
         this.x += field.w / 2
         this.y += field.h / 2
       },
+
       _move: function() {
         this.x += this.directionX * this.speed
         this.y += this.directionY * this.speed
