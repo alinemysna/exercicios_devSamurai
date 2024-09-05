@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalhando JSON</title>
+</head>
+<body>
+  <script>
+    const person = {
+      name: "Aline Mysna",
+      age: 35,
+      address: {
+        street: "Rua Central",
+        number: "100",
+        complement: "",
+        district: "Centro",
+        city: "São Paulo",
+        state: "São Paulo",
+      },
+    }
+
+    const personStr = JSON.stringify(person)
+    //console.log(typeof person)
+
+    const personObj = JSON.parse(personStr)
+    //console.log(personObj == person)
+  </script>
+</body>
+</html>

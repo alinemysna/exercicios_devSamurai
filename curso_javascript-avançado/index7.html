@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS</title>
+</head>
+<body>
+  <form action="http://google.com/search" method="get">
+    <label for="q">* Busca</label>
+    <input type="text" name="q" id=""> 
+    <input type="submit" value="Pesquisar">
+  </form>
+  
+    <script>
+      //        Evento de teclas - keydown e keyup
+      // const inputE1 = document.querySelector("input[type=text]")
+      // inputE1.addEventListener("keydown", (event) => {
+      //   console.log("event", `${event.key} - ${event.keyCode}`)
+      // })
+
+      // if(event.keyCode === 13) {
+      //   alert(`Tecla ENTER pressionada - ${input.value}`)
+      // }
+
+      // inputE1.addEventListener("keyup", (e) => {
+      //   console.log("keyup")
+      // })
+
+      //  Evento de formulário - onsubmit
+
+      const formE1 = document.querySelector("form")
+
+      formE1.addEventListener('submit', (event) => {
+        const queryValue = event.target.querySelector("input[name=q]").value
+        console.log("queryValue",queryValue)
+
+        event.preventDefault()
+      })
+
+    </script>
+</body>
+</html>

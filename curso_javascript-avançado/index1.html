@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversão e manipulação de dados</title>
+</head>
+<body>
+  <script>
+    //Type casting  coversão pelo usuário
+
+    //Type coersion conversão 'coercitiva pela VM'
+
+    //console.log("2" + 2)
+    //console.log(Number("2") + 2)
+
+    //Number ↔ String
+
+    //console.log(typeof Number("2"))
+    //console.log(typeof String(2))
+
+    //console.log(Number("a"))
+
+    //Number ↔ String ↔ BOOLEAN
+
+    // '' <-> false
+    // '2' <-> true
+    // 0 <-> false
+    // 1 <-> true
+
+  //   console.log(Boolean(""))
+  //   console.log(Boolean("abc"))
+  //   console.log(Boolean(0))
+  //   console.log(Boolean(1))
+
+  //string Date
+
+  // date -> formato ISO mes/data/ano ou
+  // console.log(new Date("08/07/2024"))
+  // console.log(new Date("2024 08 07"))
+  // console.log(new Date("2024-08-07"))
+
+  // console.log(new Date().toString())
+  // console.log(new Date().toISOString())
+
+  //string array
+
+  // let name = 'Aline'
+
+  // console.log(name[0])
+
+  // for (const v of name ) {
+  //   console.log(v)
+  // }
+
+  // console.log(name.length)
+
+
+  // let values = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+  // values = ["A", "l", "i", "n", "e"]
+
+  // console.log(values.join(""))
+
+
+  // let name =  "Lucas"
+
+  // console.log(name.split()) // ['Lucas']
+
+  //Casas decimais - formatação e arredondamento
+
+  //toFixed()
+  //Math.ceil()
+  //Math.round()
+  //Math.floor()
+
+  // let value = 1234.25
+
+  // console.log(value.toFixed(1)) 1234.3  arrendonda pra mais
+  // console.log(Math.ceil(value))   1235
+  // console.log(Math.floor(value)) 1234  arrendonda pra baixo
+  // console.log(Math.round(value))  1234
+
+  // console.log(
+  //   new Intl.NumberFormat("pt-BR", {
+  //     style: "currency",
+  //     currency:"BRL",
+  //   }).format(value)
+  // )
+
+  //Contando dígitos
+
+  // let name = "Aline"
+  // let num = 12345
+
+  // console.log(name.length)
+  // console.log(String(num).length)
+
+  // Separando e juntando strings
+
+  // let frase = "Eu sou um cara legal!"
+
+  // console.log(frase.split(" ").join("-"))
+
+  // Maísculas e minúsculas
+
+  // let frase = "Viver é maravilhoso"
+
+  // console.log(frase.toLowerCase())  // tudo minusculo
+  // console.log(frase.toUpperCase())  // tudo maiusculo
+
+  // Localizando strings
+
+  // let frase = "Paulo é um cara muito legal!"
+
+  // console.log(frase.includes("!"))  // true
+  // console.log(frase.includes("Felipe"))  // false
+
+  // console.log(frase.toLowerCase().includes("!")) //true
+  // console.log(frase.toLowerCase().includes("paulo")) //true
+
+  // Substituindo strings
+
+  // let frase = "Paulo é um cara legal!"
+
+  // console.log(frase.replace("Paulo", "Jonny")) // Jonny é um cara legal!
+  
+  // let value = 1234.556
+  // console.log(value.toFixed(2).replace(".", ",")) // metodo antigo
+
+  // Convertendo JSON
+
+    // JSON - JavaScript Object Notation
+    // JSON.stringify()
+    // JSON.parse()
+
+  //   const people = [
+  //     {
+  //       id: 1,
+  //       name: "Felipe",
+  //       lastName: "Fontoura",
+  //       bornDate: new Date(1982, 1, 18),
+  //       address: {
+  //         city: "São José dos Campos",
+  //       },
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "Eduardo",
+  //       lastName: "Moraes",
+  //       bornDate: new Date(2001, 3, 5),
+  //       address: {
+  //         city: "Recife",
+  //       },
+  //     },
+  //   ]
+  //   console.log(JSON.stringify(people)) // conversão obj -> string / JSON
+
+  //   const json =
+  //     '[{"id":1,"name":"Felipe","lastName":"Fontoura","bornDate":"1982-02-18T03:00:00.000Z","address":{"city":"São José dos Campos"}},{"id":2,"name":"Eduardo","lastName":"Moraes","bornDate":"2001-04-05T03:00:00.000Z","address":{"city":"Recife"}}]'
+    
+  //     console.log(JSON.parse(json)) // converte uma string / JSON -> obj
+
+
+  
+
+</script>
+
+
+</body>
+</html>

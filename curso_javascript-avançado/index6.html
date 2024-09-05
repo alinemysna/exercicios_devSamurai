@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Curriculum</title>
+  </head>
+  <body>
+    <img src="image/foto1.jpeg" width="100" />
+    <h1 id="person-name" class="text">Aline Mysna</h1>
+    <h2>Programador JavaScript</h2>
+    <p class="text">
+      Conhecimento em programação Frontend, Backend para desenvolvimento de
+      sistemas Fullstack.
+    </p>
+    <p>
+      Para mais detalhes, por favor, visite meu
+      <!-- <a href="https://github.com/alinemysna">Github</a> ou
+      <a href="https://devsamurai.com.br">Portfólio</a>. -->
+    </p>
+    <button>Click me</button>
+    <a href="https://github.com/alinemysna">Clique me</a>
+    <!-- <h2>Projetos</h2>
+    <ul>
+      <li>Projeto1</li>
+      <li>Projeto2</li>
+      <li>Projeto3</li>
+    </ul> -->
+    <script>
+      // Alterando dados de Elementos do DOM
+
+      // const titleE1 = document.querySelector("#person-name")
+      // console.log("titleE1 value:", titleE1.innerHTML)
+
+      // titleE1.innerHTML = "Aline M"
+      // titleE1.style.color = "red"
+
+      // Make your heart believe  -  Faça seu coração acreditar
+      //Ooh, so fly high, so fly high - Uuh, então voe alto, então voe alto
+  
+      // Criando Elementos dinâmicos no DOM
+
+      const subTitleE1 = document.createElement("h2")
+      subTitleE1.innerHTML = "Projetos"
+      
+      const pjListE1 = document.createElement("ul")
+      
+      const pjListItemE1 = document.createElement("li")
+      pjListItemE1.innerHTML = "TODO MVC"
+
+      const pjListItemE2 = document.createElement("li")
+      pjListItemE2.innerHTML = "GitHub API"
+
+      const pjListItemE3 = document.createElement("li")
+      pjListItemE3.innerHTML = "eCommerce"
+
+
+      document.body.append(subTitleE1)
+      document.body.append(pjListE1)
+
+      document.body.append(pjListItemE1)
+      document.body.append(pjListItemE2)
+      document.body.append(pjListItemE3)
+
+
+      
+      
+      for (let i = 0; i < 10; i++) {
+        pjListItemE3.innerHTML = `eCommerce ${i}`
+      }
+
+      // Eventos do DOM
+
+      // Evento de página carregada - DOMContentLoaded
+      
+      // Evento de clique - click
+
+      const button = document.querySelector("button")
+      button.addEventListener("click", () => {
+        console.log("Clicou no botão")
+      })
+      const hyperlink = document.querySelector("a")
+      hyperlink.addEventListener("click",(e) => {
+        e.preventDefault()
+        console.log("Clicou no hypperlink")
+      })
+
+
+  </script>
+  </body>
+</html>
